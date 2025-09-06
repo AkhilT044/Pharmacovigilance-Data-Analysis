@@ -117,8 +117,13 @@ After identifying the most robust signal from the Volcano Plot, we perform a dee
 ```
 pharma-signal-analysis/
 ├── data/
-│   ├── raw/          # Add the complete data file downloaded from here in you folder
-│   └── processed/    # Cleaned, processed Parquet files
+│   ├── raw/
+        └── faers_ascii_2024q4
+            └── ASCII
+                ├── DEMO24Q4
+                ├── DRUG24Q4
+                └── REAC24Q4
+│   └── processed/    # Cleaned, processed Parquet files (Files in this folder created after you run the given python code in notebook)
 ├── notebooks/
 │   ├── 01_ingest_and_clean.ipynb
 │   ├── 02_disproportionality_PRR_EB.ipynb
@@ -127,7 +132,7 @@ pharma-signal-analysis/
 │   ├── top_events_barchart.png
 │   └── volcano_plot.png
 
-
+faers_ascii_2024q4
 ## 🚀 How to Reproduce
 
 1.  Clone the repository: `git clone [URL]`
