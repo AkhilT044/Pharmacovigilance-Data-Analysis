@@ -26,7 +26,7 @@ This project analyzes data from the FDA's Adverse Event Reporting System (FAERS)
 This analysis is built on the bulk ASCII data files provided directly by the FDA. These files contain the complete dataset for a given quarter.
 
   * **Advantage:** Access to the complete, comprehensive dataset, ideal for deep historical analysis.
-  * **Source:** [FAERS Quarterly Data Extract Files](https://www.google.com/search?q=https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-quarterly-data-extract-files)
+  * **Source:** [FAERS Quarterly Data Extract Files](https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html)
 
 ### 2\. openFDA API (Alternative Method)
 
