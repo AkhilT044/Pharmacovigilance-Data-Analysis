@@ -61,8 +61,8 @@ This is the core statistical method used in the project. Since we don't know the
 The project is broken down into a clear, reproducible workflow managed across several Jupyter Notebooks:
 
 1.  **Data Ingestion & Cleaning (`01_ingest_and_clean.ipynb`):** Raw ASCII text files from a FAERS quarterly release are ingested, merged, and cleaned. The output is a set of analysis-ready Parquet files.
-2.  **Statistical Analysis (`03_disproportionality_PRR_EB.ipynb`):** The clean data is transformed into a contingency table format. PRR and robust EBGM/EB05 scores are calculated for every drug-event pair.
-3.  **Reporting & Visualization (`04_eda_and_report.ipynb`):** The final, scored results are used to generate key visualizations and a deep-dive analysis of the top-ranked safety signal.
+2.  **Statistical Analysis (`02_disproportionality_PRR_EB.ipynb`):** The clean data is transformed into a contingency table format. PRR and robust EBGM/EB05 scores are calculated for every drug-event pair.
+3.  **Reporting & Visualization (`03_eda_and_report.ipynb`):** The final, scored results are used to generate key visualizations and a deep-dive analysis of the top-ranked safety signal.
 
 ## 📊 Key Results & Visualizations
 
@@ -117,19 +117,16 @@ After identifying the most robust signal from the Volcano Plot, we perform a dee
 ```
 pharma-signal-analysis/
 ├── data/
-│   ├── raw/          # Raw FAERS quarterly data (not in repo)
+│   ├── raw/          # Add the complete data file downloaded from here in you folder
 │   └── processed/    # Cleaned, processed Parquet files
 ├── notebooks/
 │   ├── 01_ingest_and_clean.ipynb
-│   ├── 03_disproportionality_PRR_EB.ipynb
-│   └── 04_eda_and_report.ipynb
-├── images/
+│   ├── 02_disproportionality_PRR_EB.ipynb
+│   ├── 03_eda_and_report.ipynb
 │   ├── top_drugs_barchart.png
 │   ├── top_events_barchart.png
 │   └── volcano_plot.png
-├── requirements.txt
-└── README.md
-```
+
 
 ## 🚀 How to Reproduce
 
