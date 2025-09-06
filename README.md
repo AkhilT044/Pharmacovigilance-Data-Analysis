@@ -132,7 +132,8 @@ pharma-signal-analysis/
 │   ├── top_events_barchart.png
 │   └── volcano_plot.png
 
-faers_ascii_2024q4
+```
+
 ## 🚀 How to Reproduce
 
 1.  Clone the repository: `git clone [URL]`
